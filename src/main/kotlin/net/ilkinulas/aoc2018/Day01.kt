@@ -9,8 +9,7 @@ val freqs = File("src/main/resources/1_1_input.txt")
 
 fun day1Part1() = freqs.sum()
 
-
-fun day1Part2_2(): Int {
+fun day1Part2(): Int {
     val seq = generateSequence { freqs }.flatten()
     val seen = mutableSetOf<Int>()
     var sum = 0
@@ -18,9 +17,4 @@ fun day1Part2_2(): Int {
         sum += it
         sum
     }.first { !seen.add(it) }
-}
-
-fun main(args: Array<String>) {
-    println(day1Part1())
-    println(day1Part2_2())
 }
