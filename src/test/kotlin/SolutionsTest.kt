@@ -1,7 +1,4 @@
-import net.ilkinulas.aoc2018.day1Part1
-import net.ilkinulas.aoc2018.day1Part2
-import net.ilkinulas.aoc2018.day2Part1
-import net.ilkinulas.aoc2018.day2Part2
+import net.ilkinulas.aoc2018.*
 import org.junit.Assert
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -17,5 +14,12 @@ class SolutionsTest {
     fun test_day2() {
         assertEquals(4712, day2Part1())
         assertEquals("lufjygedpvfbhftxiwnaorzmq", day2Part2())
+    }
+
+
+    @Test
+    fun test_day3() {
+        assertEquals(110389, day3Part1())
+        assertEquals(552, day3Part2())
     }
 }
