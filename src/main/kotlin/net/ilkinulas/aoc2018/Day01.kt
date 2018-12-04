@@ -2,7 +2,7 @@ package net.ilkinulas.aoc2018
 
 import java.io.File
 
-val freqs = File("src/main/resources/1_1_input.txt")
+val freqs = File("src/main/resources/day_1_input.txt")
     .bufferedReader()
     .readLines()
     .map { Integer.valueOf(it) }

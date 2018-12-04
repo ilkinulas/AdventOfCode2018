@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
     println(day3Part2())
 }
 
-val claims = File("src/main/resources/3_1_input.txt")
+val claims = File("src/main/resources/day_3_input.txt")
     .bufferedReader()
     .readLines()
     .map { Claim.fromString(it) }

@@ -2,7 +2,7 @@ package net.ilkinulas.aoc2018
 
 import java.io.File
 
-val lines = File("src/main/resources/2_1_input.txt")
+val lines = File("src/main/resources/day_2_input.txt")
     .bufferedReader()
     .readLines()
 
