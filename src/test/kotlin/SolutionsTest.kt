@@ -27,4 +27,10 @@ class SolutionsTest {
         assertEquals(94040, day4Part1())
         assertEquals(39940, day4Part2())
     }
+
+    @Test
+    fun test_day5() {
+        assertEquals(11546, day5Part1())
+        assertEquals(0, day5Part2())
+    }
 }
