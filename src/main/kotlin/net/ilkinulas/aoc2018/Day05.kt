@@ -1,6 +1,7 @@
 package net.ilkinulas.aoc2018
 
 import java.io.File
+import java.util.*
 
 
 fun day5Part1(): Int {
@@ -19,6 +20,20 @@ fun day5Part2(): Int {
         }
     }
     return minLength
+}
+
+// NOTE: stack base solution is way more slow than processSingle method.
+private fun processSingleWithStack(input: String): String {
+    val stack = Stack<Char>()
+    input.forEach {
+        when {
+            stack.isEmpty() -> stack.push(it)
+            Math.abs(stack.peek().toInt() - it.toInt()) == 32 -> stack.pop()
+            else -> stack.push(it)
+        }
+    }
+
+    return stack.joinToString(separator = "").reversed()
 }
 
 private fun processAll(input: String): String {
