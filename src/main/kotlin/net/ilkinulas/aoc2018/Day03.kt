@@ -29,8 +29,6 @@ data class Claim(
         p.x >= left && p.x < left + width && p.y >= top && p.y < top + height
 }
 
-data class Point(val x: Int, val y: Int)
-
 fun main(args: Array<String>) {
     println(day3Part1())
     println(day3Part2())
