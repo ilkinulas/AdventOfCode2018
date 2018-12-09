@@ -44,6 +44,6 @@ class SolutionsTest {
     @Test
     fun test_day7() {
         assertEquals("FHMEQGIRSXNWZBCLOTUADJPKVY", day7Part1())
-        assertEquals(0, day7Part2())
+        assertEquals(917, day7Part2())
     }
 }
