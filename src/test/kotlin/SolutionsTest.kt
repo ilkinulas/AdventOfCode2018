@@ -1,5 +1,4 @@
 import net.ilkinulas.aoc2018.*
-import org.junit.Assert
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -51,5 +50,11 @@ class SolutionsTest {
     fun test_day8() {
         assertEquals(38567, day8Part1())
         assertEquals(24453, day8Part2())
+    }
+
+    @Test
+    fun test_day9() {
+        assertEquals(439341, Day09.part1())
+        assertEquals(3566801385, Day09.part2())
     }
 }
