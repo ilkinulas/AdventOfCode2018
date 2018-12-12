@@ -38,7 +38,6 @@ class Marbles(
 }
 
 object Day09 {
-    //416 players; last marble is worth 71975 points
     fun part1(): Long {
         val marbles = Marbles(numPlayers = 416, lastMarbleWorth = 71975)
         return marbles.play()
@@ -47,11 +46,5 @@ object Day09 {
     fun part2(): Long {
         val marbles = Marbles(numPlayers = 416, lastMarbleWorth = 7197500)
         return marbles.play()
-    }
-}
-
-fun main(args: Array<String>) {
-    for (i in 0 until 6) {
-        println(i)
     }
 }
