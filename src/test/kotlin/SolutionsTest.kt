@@ -59,8 +59,8 @@ class SolutionsTest {
     }
 
     @Test
-    fun test_day10() {
-        assertEquals(0, `Day10.kt`.part1())
-        assertEquals(0, `Day10.kt`.part2())
+    fun test_day11() {
+        assertEquals("235,85", Day11.part1())
+        assertEquals(Pair("233,40",13), Day11.part2())
     }
 }
